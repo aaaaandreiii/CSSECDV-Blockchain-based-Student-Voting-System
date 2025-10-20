@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "71eff6b8-e053-45d3-b214-b5d86909de6d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Client Web Browser",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -254,8 +255,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 2
+            }
           },
           {
             "position": {
@@ -281,6 +281,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -364,7 +365,6 @@
               ]
             },
             "id": "219f4404-f922-477b-98c3-f2c4c730042a",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -452,7 +452,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication Response (render)",
+              "name": "Render voter dashboard",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -465,7 +465,7 @@
               "threats": []
             },
             "labels": [
-              "Authentication Response (render)"
+              "Render voter dashboard"
             ],
             "id": "5187d3b7-6362-43ef-a08b-165c62ba1bf7",
             "source": {
