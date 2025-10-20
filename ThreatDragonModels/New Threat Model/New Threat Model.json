@@ -2977,57 +2977,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Re-auth password for verification",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Re-auth password for verification"
-            ],
-            "id": "a370b6ff-3363-43db-ae0a-fb422dc6f477",
-            "source": {
-              "cell": "2de3080a-8372-46aa-8b77-8618c8958b22",
-              "port": "04116bcb-58ff-4384-9820-9e107af88ffe"
-            },
-            "target": {
-              "cell": "3e9a02b1-b543-4f88-82f6-a2be96b5b71f",
-              "port": "fac616bc-87cd-4350-a021-074001a8dd3e"
-            },
-            "vertices": [
-              {
-                "x": 160,
-                "y": 80
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Password verification query",
               "description": "",
               "outOfScope": false,
@@ -3323,7 +3272,7 @@
             "data": {
               "type": "tm.Boundary",
               "name": "Generic Trust Boundary",
-              "description": "",
+              "description": "Blockchain is from external sources.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
@@ -3339,6 +3288,89 @@
               "x": 460,
               "y": 250
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Re-auth password for verification",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Re-auth password for verification"
+            ],
+            "id": "a370b6ff-3363-43db-ae0a-fb422dc6f477",
+            "source": {
+              "cell": "2de3080a-8372-46aa-8b77-8618c8958b22",
+              "port": "04116bcb-58ff-4384-9820-9e107af88ffe"
+            },
+            "target": {
+              "cell": "3e9a02b1-b543-4f88-82f6-a2be96b5b71f",
+              "port": "fac616bc-87cd-4350-a021-074001a8dd3e"
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "fb047106-cbb2-4b6b-9b4e-2fa3ef482ac5",
+            "source": {
+              "x": 200,
+              "y": -220
+            },
+            "target": {
+              "x": 200,
+              "y": 290
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 10
+              }
+            ]
           },
           {
             "position": {
