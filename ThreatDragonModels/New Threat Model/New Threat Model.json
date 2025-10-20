@@ -4191,32 +4191,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Generic Trust Boundary",
-              "description": "Blockchain is from external sources.",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Generic Trust Boundary"
-            ],
-            "id": "085ead47-57f6-4525-bbf6-64f2a7ba2397",
-            "source": {
-              "x": 190,
-              "y": 260
-            },
-            "target": {
-              "x": 460,
-              "y": 250
-            }
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -4500,6 +4474,53 @@
               {
                 "x": -200,
                 "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "Blockchain is from external sources.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "085ead47-57f6-4525-bbf6-64f2a7ba2397",
+            "source": {
+              "x": 150,
+              "y": 260
+            },
+            "target": {
+              "x": 540,
+              "y": 260
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 240
               }
             ]
           },
