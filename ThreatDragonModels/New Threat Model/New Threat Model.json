@@ -649,6 +649,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -732,7 +733,6 @@
               ]
             },
             "id": "c2da93cc-44e5-4067-a9ef-f98126d6e2fe",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Client Web Browser",
@@ -769,6 +769,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -865,8 +866,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 2
+            }
           },
           {
             "position": {
@@ -892,6 +892,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -975,7 +976,6 @@
               ]
             },
             "id": "351c0a41-ac21-45f2-a9fe-3f8a768047ad",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -1193,6 +1193,38 @@
               {
                 "x": 340,
                 "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "03dbaad1-39fb-425b-bf2c-a3df28e136f8",
+            "source": {
+              "x": 430,
+              "y": -70
+            },
+            "target": {
+              "x": 420,
+              "y": 190
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 30
               }
             ]
           }
