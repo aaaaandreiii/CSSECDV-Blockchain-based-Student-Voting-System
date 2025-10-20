@@ -1260,6 +1260,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1343,7 +1344,6 @@
               ]
             },
             "id": "d42228fe-8f94-4853-b0a6-b70e8a3de622",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Browser",
@@ -1459,17 +1459,7 @@
                 "x": 340,
                 "y": 130
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1574,6 +1564,38 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "e9ab8fb1-9cbd-4318-8543-505b7f67d3c9",
+            "source": {
+              "x": 450,
+              "y": -110
+            },
+            "target": {
+              "x": 450,
+              "y": 210
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 40
+              }
+            ]
+          },
+          {
             "position": {
               "x": 502,
               "y": 50
@@ -1594,6 +1616,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1690,8 +1713,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -1717,6 +1739,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1800,7 +1823,6 @@
               ]
             },
             "id": "9cff89b1-d9c8-4796-b038-c5ce9a56ab0b",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
