@@ -2479,6 +2479,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -2562,7 +2563,6 @@
               ]
             },
             "id": "3e9a02b1-b543-4f88-82f6-a2be96b5b71f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Node.js Server",
@@ -2602,6 +2602,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2685,7 +2686,6 @@
               ]
             },
             "id": "44279fd6-073d-4918-b945-5822cccdd38c",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -3315,6 +3315,32 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "085ead47-57f6-4525-bbf6-64f2a7ba2397",
+            "source": {
+              "x": 190,
+              "y": 260
+            },
+            "target": {
+              "x": 460,
+              "y": 250
+            }
+          },
+          {
             "position": {
               "x": -88,
               "y": 70
@@ -3335,6 +3361,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -3431,8 +3458,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -3458,6 +3484,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -3541,7 +3568,6 @@
               ]
             },
             "id": "b0b12d32-6804-4269-961d-999d4e8edbc0",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Ethereum Blockchain",
