@@ -452,7 +452,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Render voter dashboard",
+              "name": "Authentication Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -465,7 +465,7 @@
               "threats": []
             },
             "labels": [
-              "Render voter dashboard"
+              "Authentication Response"
             ],
             "id": "5187d3b7-6362-43ef-a08b-165c62ba1bf7",
             "source": {
@@ -616,6 +616,225 @@
                 "y": 40
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Credentials through form",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Login Credentials through form"
+            ],
+            "id": "819a127c-133d-4d00-9bcc-cbc6a7d0e85f",
+            "source": {
+              "cell": "61cdaf01-a01f-4981-a202-bc5e33f83766",
+              "port": "3bc5677a-1df0-4f1d-a2df-7cf7318fc146"
+            },
+            "target": {
+              "cell": "71eff6b8-e053-45d3-b214-b5d86909de6d",
+              "port": "fef6b86f-48c6-489a-8bdf-41c3e554ce54"
+            },
+            "vertices": [
+              {
+                "x": -40,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Render Voter Dashboard",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Render Voter Dashboard"
+            ],
+            "id": "0c54e39c-f69a-45c5-9b4d-155dd37ff979",
+            "source": {
+              "cell": "71eff6b8-e053-45d3-b214-b5d86909de6d",
+              "port": "fef6b86f-48c6-489a-8bdf-41c3e554ce54"
+            },
+            "target": {
+              "cell": "61cdaf01-a01f-4981-a202-bc5e33f83766",
+              "port": "3bc5677a-1df0-4f1d-a2df-7cf7318fc146"
+            },
+            "vertices": [
+              {
+                "x": -40,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": -270,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Voter"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a7ace322-ba8b-4c86-b9f2-940eb695e7da"
+                },
+                {
+                  "group": "right",
+                  "id": "3bc5677a-1df0-4f1d-a2df-7cf7318fc146"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6e0657a5-6248-4330-a682-6fd2b9dd9acb"
+                },
+                {
+                  "group": "left",
+                  "id": "9fade71a-cbdf-4348-be9f-92df274bcc6e"
+                }
+              ]
+            },
+            "id": "61cdaf01-a01f-4981-a202-bc5e33f83766",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Voter",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": ""
