@@ -1390,7 +1390,22 @@
               "cell": "d42228fe-8f94-4853-b0a6-b70e8a3de622",
               "port": "5065f941-a1cc-4712-a585-8ba2710ea2be"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 340,
+                "y": 130
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1441,17 +1456,58 @@
                 "x": 830,
                 "y": 80
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Storage confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Storage confirmation"
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "id": "08ed729e-3c48-4d0e-800a-33fc14dbf66e",
+            "source": {
+              "cell": "9cff89b1-d9c8-4796-b038-c5ce9a56ab0b",
+              "port": "d8c019b0-9dfc-40bc-bd62-d301fb711ffc"
+            },
+            "target": {
+              "cell": "0355d16f-4970-4fdc-88f5-1e48fd27f1a3",
+              "port": "5065f941-a1cc-4712-a585-8ba2710ea2be"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 130
+              }
+            ]
           },
           {
             "position": {
