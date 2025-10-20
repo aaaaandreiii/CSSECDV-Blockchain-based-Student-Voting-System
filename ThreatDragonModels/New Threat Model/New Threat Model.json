@@ -2809,8 +2809,8 @@
                 "text": "Client Web Browser"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2907,12 +2907,26 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7a7318c5-bb18-4c32-9dfc-9a31008e2c3d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 16,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3515,6 +3529,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -3598,7 +3613,6 @@
               ]
             },
             "id": "84e345bb-638f-4eed-9f56-e518741ca0a9",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -5128,6 +5142,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 17
   }
 }
